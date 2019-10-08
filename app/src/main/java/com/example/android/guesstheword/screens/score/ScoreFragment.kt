@@ -60,7 +60,8 @@ class ScoreFragment : Fragment() {
                 viewModel.onPlayAgainComplete()
             }
         })
-        binding.playAgainButton.setOnClickListener {  viewModel.onPlayAgain()  }
+        binding.scoreViewModel = viewModel
+//        binding.playAgainButton.setOnClickListener {  viewModel.onPlayAgain()  }
         return binding.root
     }
 }
